@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="DynamicPDFs\**" />
+	  <EmbeddedResource Remove="DynamicPDFs\**" />
+	  <None Remove="DynamicPDFs\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SkyCars.Core\SkyCars.Core.csproj" />
+		<ProjectReference Include="..\SkyCars.Data\SkyCars.Data.csproj" />
+	</ItemGroup>
+
+	
+</Project>

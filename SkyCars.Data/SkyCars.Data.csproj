@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentMigrator" Version="3.3.0" />
+		<PackageReference Include="FluentMigrator.Runner" Version="3.3.0" />
+		<PackageReference Include="linq2db" Version="3.4.4" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SkyCars.Core\SkyCars.Core.csproj" />
+	</ItemGroup>
+
+</Project>
